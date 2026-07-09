@@ -1,0 +1,62 @@
+AL/ML Concept- 07/09/2026
+
+Select is used to retrieve data from table 
+Distinct - remove the duplicate values returns onlu unique records
+
+Count - counts the number of rows or values in a yable 
+
+COUNT(*) → "How many total rows are there?"
+COUNT(column_name) → "How many rows have a value in this column (ignoring NULLs)?"
+COUNT(DISTINCT column_name) → "How many different values are there in this column?" 
+
+
+LIMIT - restricts the number of rows returned by a query.
+
+Where- filters rows based on a specified condition.
+
+AND- returns rows only when all conditions are true.
+
+OR-returns rows when at least one of the conditions is true.
+
+NOT-excludes rows that satisfy a condition 
+
+ORDER by- sorts the result set in ascending (ASC) or descending (DESC) order.
+
+LIke (Wildcard)
+like is used to search for pattern in text 
+
+Wildcard 
+
+%- Represent zero or more characters
+_- Represent exactly one character 
+
+NULL- null represent a missing or unknown value 
+
+IS NULL- finds missing values 
+IS NOT NULL- Find rows with existing values 
+
+Between -filters values within a specified range. The starting and ending values are included.
+
+WHERE- Filters rows based on a specified condition.
+Not not null 
+
+Group BY : groups rows that same value so aggregate functions like COUNT(), SUM(), AVG(), MIN(), and MAX() can be applied to each group.
+
+Having -filter grouped resuly after group by clause It is similar to WHERE, but it works on groups instead of individual rows.
+
+SQL executes them in order 
+
+1. FROM 2. WHERE 3. GROUP BY 4. HAVING 5. SELECT 6. ORDER BY 7. LIMIT
+
+
+WHere vs having 
+
+Where
+Filters individual rows.
+Used before grouping.
+Cannot use aggregate functions like COUNT(), AVG(), SUM().
+Having 
+
+Filters grouped data.
+Used after GROUP BY.
+Can use aggregate functions.
