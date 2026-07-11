@@ -1,0 +1,447 @@
+SQL BUILT-IN FUNCTIONS NOTES
+String Functions, Mathematical Functions, and Date & Time Functions
+
+==================================================
+1. STRING FUNCTIONS
+==================================================
+
+String functions are used to work with text values.
+
+CONCAT()
+Definition: Combines two or more strings into one string.
+Syntax:
+CONCAT(string1, string2, string3)
+
+CONCAT_WS()
+Definition: Combines multiple strings using a separator.
+Syntax:
+CONCAT_WS(separator, string1, string2)
+
+SUBSTRING()
+Definition: Extracts part of a string from a specified starting position.
+Syntax:
+SUBSTRING(string, starting_position, number_of_characters)
+
+SUBSTR()
+Definition: Extracts part of a string. It works the same way as SUBSTRING().
+Syntax:
+SUBSTR(string, starting_position, number_of_characters)
+
+LEFT()
+Definition: Returns a specified number of characters from the left side of a string.
+Syntax:
+LEFT(string, number_of_characters)
+
+RIGHT()
+Definition: Returns a specified number of characters from the right side of a string.
+Syntax:
+RIGHT(string, number_of_characters)
+
+LPAD()
+Definition: Adds characters to the left side of a string until it reaches the specified length.
+Syntax:
+LPAD(string, final_length, padding_character)
+
+RPAD()
+Definition: Adds characters to the right side of a string until it reaches the specified length.
+Syntax:
+RPAD(string, final_length, padding_character)
+
+LENGTH()
+Definition: Returns the number of bytes in a string.
+Syntax:
+LENGTH(string)
+
+CHAR_LENGTH()
+Definition: Returns the number of characters in a string.
+Syntax:
+CHAR_LENGTH(string)
+
+CHARACTER_LENGTH()
+Definition: Returns the number of characters in a string. It works the same way as CHAR_LENGTH().
+Syntax:
+CHARACTER_LENGTH(string)
+
+UPPER()
+Definition: Converts all letters in a string to uppercase.
+Syntax:
+UPPER(string)
+
+LOWER()
+Definition: Converts all letters in a string to lowercase.
+Syntax:
+LOWER(string)
+
+REVERSE()
+Definition: Reverses the order of characters in a string.
+Syntax:
+REVERSE(string)
+
+REPLACE()
+Definition: Replaces part of a string with another value.
+Syntax:
+REPLACE(string, old_value, new_value)
+
+LOCATE()
+Definition: Returns the position of a substring inside another string.
+Syntax:
+LOCATE(search_value, string)
+
+INSTR()
+Definition: Returns the position of the first occurrence of one string inside another string.
+Syntax:
+INSTR(string, search_value)
+
+POSITION()
+Definition: Returns the position of a substring inside another string.
+Syntax:
+POSITION(search_value IN string)
+
+SUBSTRING_INDEX()
+Definition: Returns part of a string before or after a specified delimiter.
+Syntax:
+SUBSTRING_INDEX(string, delimiter, count)
+
+TRIM()
+Definition: Removes spaces or specified characters from the beginning and end of a string.
+Syntax:
+TRIM(string)
+
+LTRIM()
+Definition: Removes spaces from the left side of a string.
+Syntax:
+LTRIM(string)
+
+RTRIM()
+Definition: Removes spaces from the right side of a string.
+Syntax:
+RTRIM(string)
+
+SPACE()
+Definition: Returns a string containing a specified number of spaces.
+Syntax:
+SPACE(number)
+
+REPEAT()
+Definition: Repeats a string a specified number of times.
+Syntax:
+REPEAT(string, number_of_times)
+
+REGEXP
+Definition: Checks whether a string matches a regular-expression pattern.
+Syntax:
+column_name REGEXP 'pattern'
+
+NOT REGEXP
+Definition: Checks whether a string does not match a regular-expression pattern.
+Syntax:
+column_name NOT REGEXP 'pattern'
+
+CASE
+Definition: Applies conditions and returns different results depending on which condition is true.
+Syntax:
+CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    ELSE result3
+END
+
+
+==================================================
+2. MATHEMATICAL FUNCTIONS
+==================================================
+
+Mathematical functions are used to perform calculations on numerical values.
+
+ADDITION
+Definition: Adds two numerical values.
+Syntax:
+number1 + number2
+
+SUBTRACTION
+Definition: Subtracts one numerical value from another.
+Syntax:
+number1 - number2
+
+MULTIPLICATION
+Definition: Multiplies two numerical values.
+Syntax:
+number1 * number2
+
+DIVISION
+Definition: Divides one numerical value by another.
+Syntax:
+number1 / number2
+
+MOD()
+Definition: Returns the remainder after division.
+Syntax:
+MOD(number1, number2)
+
+ROUND()
+Definition: Rounds a number to a specified number of decimal places.
+Syntax:
+ROUND(number, decimal_places)
+
+CEIL()
+Definition: Rounds a number upward to the nearest whole number.
+Syntax:
+CEIL(number)
+
+CEILING()
+Definition: Rounds a number upward to the nearest whole number.
+Syntax:
+CEILING(number)
+
+FLOOR()
+Definition: Rounds a number downward to the nearest whole number.
+Syntax:
+FLOOR(number)
+
+ABS()
+Definition: Returns the absolute or positive value of a number.
+Syntax:
+ABS(number)
+
+POWER()
+Definition: Raises a number to a specified power.
+Syntax:
+POWER(base_number, exponent)
+
+POW()
+Definition: Raises a number to a specified power. It works the same way as POWER().
+Syntax:
+POW(base_number, exponent)
+
+SQRT()
+Definition: Returns the square root of a number.
+Syntax:
+SQRT(number)
+
+RAND()
+Definition: Generates a random decimal number between 0 and 1.
+Syntax:
+RAND()
+
+SIGN()
+Definition: Returns 1 for a positive number, -1 for a negative number, and 0 for zero.
+Syntax:
+SIGN(number)
+
+GREATEST()
+Definition: Returns the largest value from a list of values.
+Syntax:
+GREATEST(value1, value2, value3)
+
+LEAST()
+Definition: Returns the smallest value from a list of values.
+Syntax:
+LEAST(value1, value2, value3)
+
+TRUNCATE()
+Definition: Removes decimal digits without rounding the number.
+Syntax:
+TRUNCATE(number, decimal_places)
+
+COUNT()
+Definition: Returns the number of rows or non-null values.
+Syntax:
+COUNT(*)
+COUNT(column_name)
+
+COUNT(DISTINCT)
+Definition: Counts the number of unique values in a column.
+Syntax:
+COUNT(DISTINCT column_name)
+
+SUM()
+Definition: Calculates the total of numerical values.
+Syntax:
+SUM(column_name)
+
+AVG()
+Definition: Calculates the average of numerical values.
+Syntax:
+AVG(column_name)
+
+MIN()
+Definition: Returns the smallest numerical value or earliest date.
+Syntax:
+MIN(column_name)
+
+MAX()
+Definition: Returns the largest numerical value or latest date.
+Syntax:
+MAX(column_name)
+
+
+==================================================
+3. DATE AND TIME FUNCTIONS
+==================================================
+
+Date and time functions are used to retrieve, extract, calculate, and format dates and times.
+
+CURDATE()
+Definition: Returns the current date.
+Syntax:
+CURDATE()
+
+CURRENT_DATE()
+Definition: Returns the current date.
+Syntax:
+CURRENT_DATE()
+
+CURTIME()
+Definition: Returns the current time.
+Syntax:
+CURTIME()
+
+CURRENT_TIME()
+Definition: Returns the current time.
+Syntax:
+CURRENT_TIME()
+
+NOW()
+Definition: Returns the current date and current time.
+Syntax:
+NOW()
+
+CURRENT_TIMESTAMP()
+Definition: Returns the current date and current time.
+Syntax:
+CURRENT_TIMESTAMP()
+
+DATE()
+Definition: Extracts the date part from a date-time value.
+Syntax:
+DATE(date_time_value)
+
+TIME()
+Definition: Extracts the time part from a date-time value.
+Syntax:
+TIME(date_time_value)
+
+YEAR()
+Definition: Extracts the year from a date.
+Syntax:
+YEAR(date_value)
+
+MONTH()
+Definition: Extracts the month number from a date.
+Syntax:
+MONTH(date_value)
+
+MONTHNAME()
+Definition: Returns the full month name from a date.
+Syntax:
+MONTHNAME(date_value)
+
+DAY()
+Definition: Returns the day of the month.
+Syntax:
+DAY(date_value)
+
+DAYOFMONTH()
+Definition: Returns the day number of the month.
+Syntax:
+DAYOFMONTH(date_value)
+
+DAYNAME()
+Definition: Returns the name of the weekday.
+Syntax:
+DAYNAME(date_value)
+
+DAYOFWEEK()
+Definition: Returns the weekday number.
+Syntax:
+DAYOFWEEK(date_value)
+
+DAYOFYEAR()
+Definition: Returns the day number within the year.
+Syntax:
+DAYOFYEAR(date_value)
+
+WEEK()
+Definition: Returns the week number of the year.
+Syntax:
+WEEK(date_value)
+
+QUARTER()
+Definition: Returns the quarter of the year.
+Syntax:
+QUARTER(date_value)
+
+HOUR()
+Definition: Extracts the hour from a time or date-time value.
+Syntax:
+HOUR(time_value)
+
+MINUTE()
+Definition: Extracts the minute from a time or date-time value.
+Syntax:
+MINUTE(time_value)
+
+SECOND()
+Definition: Extracts the seconds from a time or date-time value.
+Syntax:
+SECOND(time_value)
+
+DATEDIFF()
+Definition: Calculates the number of days between two dates.
+Syntax:
+DATEDIFF(later_date, earlier_date)
+
+TIMEDIFF()
+Definition: Calculates the time difference between two time or date-time values.
+Syntax:
+TIMEDIFF(later_time, earlier_time)
+
+TIMESTAMPDIFF()
+Definition: Calculates the difference between two date-time values using a specified unit.
+Syntax:
+TIMESTAMPDIFF(unit, starting_date, ending_date)
+
+DATE_ADD()
+Definition: Adds a specified amount of time to a date.
+Syntax:
+DATE_ADD(date_value, INTERVAL number unit)
+
+ADDDATE()
+Definition: Adds a specified amount of time to a date.
+Syntax:
+ADDDATE(date_value, INTERVAL number unit)
+
+DATE_SUB()
+Definition: Subtracts a specified amount of time from a date.
+Syntax:
+DATE_SUB(date_value, INTERVAL number unit)
+
+SUBDATE()
+Definition: Subtracts a specified amount of time from a date.
+Syntax:
+SUBDATE(date_value, INTERVAL number unit)
+
+DATE_FORMAT()
+Definition: Displays a date in a specified format.
+Syntax:
+DATE_FORMAT(date_value, 'format')
+
+LAST_DAY()
+Definition: Returns the final date of the month.
+Syntax:
+LAST_DAY(date_value)
+
+EXTRACT()
+Definition: Retrieves a specific part of a date or time value.
+Syntax:
+EXTRACT(unit FROM date_value)
+
+STR_TO_DATE()
+Definition: Converts a string into a date using a specified format.
+Syntax:
+STR_TO_DATE(string_value, 'format')
+
+BETWEEN
+Definition: Checks whether a value falls within a specified range, including both endpoints.
+Syntax:
+column_name BETWEEN starting_value AND ending_value
