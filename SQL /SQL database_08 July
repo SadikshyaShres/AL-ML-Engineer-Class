@@ -1,0 +1,33 @@
+Al/ML Class- 07/08/2026
+
+Database- SQL, MySQL 
+They create server 
+
+My SQL Server 
+-Database -  a space is where you store the data 
+
+Workbench - connect to my sql server inside the database 
+
+schema- Inside table , views
+
+SQL Commands 
+DDL -Data Definition Language- Define data: Create table , alter table, 
+DML- Data Manipulative Language : insert into , update , delete 
+DQL- Data Query language - SELECT(querying the data)
+DCL- Data Control Language : Comand 
+GRANT, REVOKE, 
+TCL- Transaction Control Language: maintain data integrity and handle errors 
+
+Constraint 
+Not Null 
+Unique 
+Foreign - foreign key is a field of collection of field in one table that refers to the primary key in another table
+Check 
+Default 
+Primary -unique identifier 
+
+
+
+
+Normalization : Any table should noy have duplicate records 
+Denormalization: 
