@@ -1,0 +1,107 @@
+Notes SQL - 07/13/2026
+SQL Notes: Cardinality, Joins, and Subqueries
+Cardinality- defines the relationship between records (rows) in two database tables. It describes how many rows in one table can be associated with rows in another table.
+
+-------------------------------------------------------------
+1. One-to-One (1:1) - relationship means one record in the first table is related to only one record in the second table, and vice versa.
+Key Points
+* One record matches exactly one record.
+* Usually implemented using a **Primary Key** and a **Unique Foreign Key**.
+
+2. One-to-Many (1:M)-relationship means one record in the first table can be related to multiple records in the second table, but each record in the second table belongs to only one record in the first table.
+Key Points
+* Most common relationship in relational databases.
+* The foreign key is stored in the "many" side of the relationship.
+
+3. Many-to-One (M:1)- relationship means multiple records in the first table are related to one record in the second table.
+Key Points
+* It is the reverse perspective of a One-to-Many relationship.
+* Multiple rows reference the same parent record.
+
+4. Many-to-Many (M:M)- relationship means multiple records in the first table can be related to multiple records in the second table.
+Key Points
+* Cannot be implemented directly in a relational database.
+* Requires a **Bridge (Junction) Table**.
+
+Bridge (Junction) Table-(also called a **Junction Table** or **Associative Table**) is an intermediate table used to create a Many-to-Many relationship between two tables.
+Key Points
+* Contains the foreign keys of both related tables.
+* Converts one Many-to-Many relationship into two One-to-Many relationships.
+* Can also store additional information about the relationship.
+
+-------------------------------------------------------------------------------------------------------------
+# SQL Joins
+
+A **JOIN** combines rows from two or more tables based on a related column, usually a Primary Key and a Foreign Key.
+
+1. INNER JOIN -Returns only the rows that have matching values in both tables.
+Key Points
+* Displays common records only.
+* Non-matching rows are excluded.
+
+2. LEFT JOIN (LEFT OUTER JOIN)-Returns all rows from the left table and the matching rows from the right table.
+Key Points
+* All rows from the left table are included.
+* Non-matching rows from the right table appear as `NULL`.
+
+ 3. RIGHT JOIN (RIGHT OUTER JOIN)-Returns all rows from the right table and the matching rows from the left table.
+Key Points
+* All rows from the right table are included.
+* Non-matching rows from the left table appear as `NULL`.
+
+4. FULL OUTER JOIN-Returns all matching and non-matching rows from both tables.
+Key Points
+* Combines the results of LEFT JOIN and RIGHT JOIN.
+* Non-matching rows from either table contain `NULL`.
+* **Not directly supported in MySQL**; it is simulated using `LEFT JOIN`, `RIGHT JOIN`, and `UNION`.
+
+5. CROSS JOIN-Returns the Cartesian Product of two tables by combining every row from the first table with every row from the second table.
+ Key Points
+* No join condition is required.
+* The total number of rows equals:
+  **Rows in Table A × Rows in Table B**.
+
+6. SELF JOIN-joins a table with itself.
+ Key Points
+* Uses table aliases to treat the same table as two separate tables.
+* Commonly used to compare rows within the same table or represent hierarchical relationships.
+
+--------------------------------------------------------------------------------------------------------------
+
+# Subqueries- is a query written inside another SQL query. It is also called an **Inner Query** or **Nested Query**.
+Key Points
+* Written inside parentheses `()`.
+* The outer query uses the result returned by the subquery.
+
+ 1. Subquery in WHERE Clause-A subquery in the **WHERE** clause is used to filter records based on the result returned by another query.
+Key Points
+* The subquery executes first.
+* The outer query uses its result to filter rows.
+
+2. Subquery in SELECT Clause -A subquery in the **SELECT** clause returns a value that is displayed as an additional column in the result.
+Key Points
+* Typically returns a single value for each row.
+* Useful for calculated or aggregated values.
+
+3. Derived Table-is a subquery placed in the **FROM** clause. The result acts as a temporary table for the outer query.
+Key Points
+* Must be assigned an alias.
+* Can be queried like a regular table.
+
+4. Correlated Subquery- is a subquery that depends on values from the outer query.
+Key Points
+* References one or more columns from the outer query.
+* Executes once for each row processed by the outer query.
+* Often used with `EXISTS` or comparisons against related data.
+
+# Difference Between Regular and Correlated Subqueries
+
+* Does not depend on the outer query.
+* Usually executes once.
+* Its result is passed to the outer query.
+
+### Correlated Subquery
+
+* Depends on the outer query.
+* Executes once for every row processed by the outer query.
+* Uses values from the outer query during execution.
