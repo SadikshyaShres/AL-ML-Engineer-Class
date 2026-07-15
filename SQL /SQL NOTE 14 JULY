@@ -1,0 +1,84 @@
+1. Common Table Expression (CTE)
+Definition :A Common Table Expression (CTE) is a temporary named result set that exists only during the execution of a single SQL statement.
+**What it does**
+-Simplifies complex SQL queries.
+-Improves query readability and maintainability.
+-Breaks large queries into smaller logical parts.
+-Can be referenced multiple times within the same SQL statement.
+-Does not permanently store data.
+
+2. Scope of a CTE
+Definition:The scope of a CTE is limited to the single SQL statement immediately following its declaration.
+**What it does**
+-Exists only while the query is executing.
+-Cannot be accessed by another SQL statement.
+-Is automatically removed after execution.
+
+3. . Repeated CTE
+Definition:A repeated CTE is a CTE that is referenced multiple times within the same SQL statement.
+**What it does**
+-Prevents repeating the same subquery.
+-Improves readability.
+-Makes queries easier to maintain.
+-Reduces duplicate SQL code.
+
+4.Recursive CTE
+Definition-A Recursive CTE is a CTE that references itself until a stopping condition is met.
+What it does
+Generates sequences of numbers.
+Generates date ranges.
+Traverses hierarchical or parent-child data.
+Solves recursive problems without loops.
+
+6.Temporary Table is a table created for temporary storage during the current database session.
+What it does
+Stores intermediate query results.
+Can be reused by multiple queries in the same session.
+Improves performance for complex operations.
+Is automatically removed when the session ends.
+
+7 View
+Definition:A View is a virtual table created from the result of a SQL query.
+What it does
+Simplifies complex queries.
+Hides unnecessary columns.
+Provides an additional security layer.
+Presents data from one or more tables.
+Does not usually store data itself.
+
+Data Security
+Definition:Data security is the process of protecting database information from unauthorized access or modification.
+What it does
+Controls user access.
+Protects sensitive information.
+Restricts database operations.
+Ensures confidentiality and integrity.
+Uses users, roles, privileges, views, and stored procedures.
+
+Stored Procedure
+Definition:A Stored Procedure is a collection of SQL statements stored in the database that can be executed whenever needed.
+What it does
+Reuses SQL code.
+Reduces repetitive coding.
+Improves maintainability.
+Supports conditions, loops, and cursors.
+Accepts parameters.
+Improves security by controlling database access.
+
+Dynamic SQL Stored Procedure
+Definition
+A Dynamic SQL Stored Procedure creates and executes SQL statements during runtime instead of using fixed SQL.
+What it does
+Builds SQL queries dynamically.
+Allows dynamic table names and column names.
+Supports flexible searching and sorting.
+Reduces the need for multiple similar procedures.
+Uses PREPARE, EXECUTE, and DEALLOCATE PREPARE.
+
+. Cursor
+Definition:A Cursor is a database object that retrieves query results one row at a time.
+What it does
+Processes records individually.
+Performs row-by-row operations.
+Supports complex procedural logic.
+Is mainly used inside stored procedures.
