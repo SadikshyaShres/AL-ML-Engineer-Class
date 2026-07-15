@@ -1,0 +1,50 @@
+1. Indexing in SQL- special data structure that helps the database find rows much faster without scanning the entire table
+Use of indexing 
+-Speed up the select queries 
+-Improves where clause searches 
+-Make Join operation faster 
+-Speed up Order by 
+-Speed up Group by 
+--------------------------------------------------------------------
+Types of indexing 
+a)-----Clustered Index----
+A clustered index determines the physical order of data rows in a table
+In MySQL (InnoDB), the primary key is always the clustered index.
+** Characteristics of Index
+-There is only one clustered index per table
+-All rows are physically ordered by the clustered index key 
+- Very fast for range queries and primary key lookups 
+b)------Non Clustered Index------
+A non clustered index is a separate structure from the actual table data. It stores pointers (row IDs or PK values) to the actual rows in the clustered index.
+***Characteristics: ***
+-You can have multiple non-clustered indexes per table.
+- Ideal for filtering, searching, sorting on non-PK columns.
+- Slower than clustered index for lookups, since it adds an extra lookup step (called bookmark lookup).
+c)Primary Index 
+Create automatically when a primay key is defined
+Uses 
+-Fast searching by primary key 
+-Ensure uniqueness
+-Cannot contain NULL values
+d)Unique Index
+Uses
+-email, passport number, SSN , employee ID 
+e)Single column index- create on one column 
+f)Composite (multiple column ) index 
+g)Full text index- use large amount of data. useful for articles, blogs, product decription 
+h)Spatial index- Used for geographic- location based data
+
+***Disadvantages of Indexing***
+-Uses additional storage space
+-Slows down INSERT
+-Slows down UPDATE
+-Slows down DELETE
+-Too many indexes can reduce overall write performance
+
+****When Should You Create an Index?***
+Create indexes on columns that:
+-Are frequently used in WHERE clauses
+-Are often used in JOIN conditions
+-Are used in ORDER BY
+-Are used in GROUP BY
+=Have many distinct values (high selectivity)
