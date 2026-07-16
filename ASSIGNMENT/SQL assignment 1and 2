@@ -10,7 +10,7 @@ WHERE  title like '%ACTION%'
 OR description like '%WAR%';
 ------------------------------------------------------------------------------------------
 #3. List all customers whose last name is not 'SMITH' and whose first name ends with 'a'.
-SELECt * FROM customer
+SELECT* FROM customer
 WHERE last_name <> 'SMITH'
 and first_name like '%A';
 ------------------------------------------------------------------------------------------------
