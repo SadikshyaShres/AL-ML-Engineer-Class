@@ -1,0 +1,581 @@
+Python Notes: String, List, Tuple, and Dictionary
+
+1. String
+
+A string is a sequence of characters used to store text. A string may contain letters, numbers, spaces, and symbols. Strings are written inside single, double, or triple quotation marks.
+
+Properties of strings
+
+Ordered: Every character has a fixed position.
+
+Indexed: The first character has index 0.
+
+Immutable: Individual characters cannot be changed after the string is created.
+
+Case-sensitive: Uppercase and lowercase letters are treated differently.
+
+Duplicates allowed: A character may appear more than once.
+
+Iterable: A string can be processed one character at a time.
+
+String concatenation
+
+Concatenation means joining strings together. The plus operator is commonly used for concatenation. A number must first be converted into a string before it can be joined directly with text.
+
+String indexing
+
+Indexing accesses one character from a string.
+
+Positive indexing starts from 0 and moves from left to right.
+
+Negative indexing starts from -1 and moves from right to left.
+
+String slicing
+
+Slicing extracts a section of a string.
+
+Syntax: string[start:stop:step]
+
+start is the first included position.
+
+stop is the ending position and is not included.
+
+step controls how many positions to move at a time.
+
+A negative step can reverse a string.
+
+Print formatting
+
+Print formatting combines text and values in a readable way.
+
+.format() method
+
+The .format() method places values into curly-brace placeholders.
+
+Syntax: "Text {}".format(value)
+
+It supports:
+
+Positional placeholders
+
+Named placeholders
+
+Decimal formatting
+
+Percentage formatting
+
+Number alignment
+
+Thousands separators
+
+F-string
+
+An f-string places variable names or expressions directly inside curly braces. It is a modern and readable formatting method.
+
+Syntax: f"Text {variable}"
+
+Locating and counting string content
+
+find() returns the index of the first match. It returns -1 when the value is missing.
+
+index() returns the index of the first match. It raises an error when the value is missing.
+
+rfind() returns the position of the last match.
+
+count() returns the number of times a character or word appears.
+
+String checking methods
+
+These methods return either True or False.
+
+isalnum() checks whether the string contains only letters and numbers.
+
+isalpha() checks whether the string contains only letters.
+
+isdigit() checks whether the string contains only digits.
+
+istitle() checks whether each word begins with a capital letter and the remaining letters are lowercase.
+
+islower() checks whether all letters are lowercase.
+
+isupper() checks whether all letters are uppercase.
+
+isspace() checks whether the string contains only whitespace.
+
+startswith() checks whether the string starts with a specified value.
+
+endswith() checks whether the string ends with a specified value.
+
+Other important string methods
+
+upper() converts letters to uppercase.
+
+lower() converts letters to lowercase.
+
+title() changes text to title case.
+
+capitalize() capitalizes the first character.
+
+strip() removes whitespace from both ends.
+
+replace() replaces selected text.
+
+split() divides a string into a list and removes the separator.
+
+partition() divides a string into a three-item tuple: text before the separator, the separator, and text after it.
+
+expandtabs() replaces tab characters with spaces according to a selected tab size.
+
+Difference between split() and partition()
+
+split()
+
+partition()
+
+Returns a list
+
+Returns a tuple
+
+Can divide at every occurrence
+
+Divides at the first occurrence
+
+Removes the separator
+
+Keeps the separator
+
+May return many parts
+
+Always returns three parts
+
+Regular expressions
+
+A regular expression, or Regex, is a text pattern used to search, validate, extract, split, or replace text. Python provides regular-expression features through the re module.
+
+Common Regex operations include:
+
+Search: Finds the first match anywhere in the text.
+
+Match: Checks for a match at the beginning.
+
+Full match: Checks whether the complete string follows a pattern.
+
+Find all: Returns every match.
+
+Substitute: Replaces matching text.
+
+Split: Divides text using a pattern.
+
+Common Regex symbols include:
+
+Symbol
+
+Meaning
+
+\d
+
+A digit
+
+\w
+
+A letter, number, or underscore
+
+\s
+
+A whitespace character
+
+.
+
+Any single character
+
++
+
+One or more occurrences
+
+*
+
+Zero or more occurrences
+
+?
+
+Zero or one occurrence
+
+^
+
+Beginning of the string
+
+$
+
+End of the string
+
+[A-Z]
+
+An uppercase letter
+
+[a-z]
+
+A lowercase letter
+
+[0-9]
+
+A digit from zero to nine
+
+{n}
+
+Exactly n occurrences
+
+partition() is a string method, not a regular expression.
+
+2. List
+
+A list is an ordered collection that stores multiple items in one variable. Lists are written using square brackets.
+
+Properties of lists
+
+Ordered: Items retain their positions.
+
+Indexed: The first item has index 0.
+
+Mutable: Items can be added, removed, or changed.
+
+Duplicates allowed: The same value may appear more than once.
+
+Mixed data types allowed: A list can contain strings, numbers, Boolean values, and other collections.
+
+Dynamic: A list can grow or shrink.
+
+List indexing
+
+Indexing accesses one item from a list.
+
+Positive indexing begins at 0.
+
+Negative indexing begins at -1 from the end.
+
+List slicing
+
+Slicing extracts a section and returns a new list.
+
+Syntax: list[start:stop:step]
+
+The stop position is not included. A negative step can reverse the order.
+
+List mutability
+
+Mutability means list items can be changed after creation. Items can also be inserted, appended, or removed.
+
+Important list methods
+
+append() adds one item to the end.
+
+extend() adds each item from another collection.
+
+insert() adds an item at a specified index.
+
+pop() removes and returns an item; without an index, it removes the last item.
+
+remove() removes the first matching value.
+
+reverse() reverses the original list.
+
+sort() arranges the original list in ascending or descending order.
+
+count() counts occurrences of a value.
+
+index() returns the first index of a value.
+
+clear() removes all items.
+
+copy() creates a shallow copy.
+
+append() versus extend()
+
+append() adds its argument as one complete item.
+
+extend() adds the argument's individual items separately.
+
+remove() versus pop()
+
+remove() deletes an item by value.
+
+pop() deletes an item by index and returns the removed item.
+
+Nested list
+
+A nested list is a list containing one or more lists. Multiple indexes are used to access an item inside an inner list. Nested lists are useful for tables, matrices, student records, and grouped data.
+
+List comprehension
+
+List comprehension is a short method for creating a new list from an existing iterable. It can transform items and include a condition.
+
+Basic syntax: [expression for item in collection]
+
+Conditional syntax: [expression for item in collection if condition]
+
+3. Tuple
+
+A tuple is an ordered collection used to store multiple values. Tuples are usually written using parentheses. The comma is what technically creates a tuple.
+
+Properties of tuples
+
+Ordered: Items retain their positions.
+
+Indexed: The first item has index 0.
+
+Immutable: Items cannot be added, removed, or changed directly.
+
+Duplicates allowed: Values may appear more than once.
+
+Mixed data types allowed: A tuple can contain different kinds of data.
+
+One-item tuple
+
+A one-item tuple requires a comma after its item. Without the comma, Python treats the value as its ordinary data type rather than a tuple.
+
+Tuple indexing and slicing
+
+Tuples support positive and negative indexing. They also use the same slicing structure as strings and lists.
+
+Syntax: tuple[start:stop:step]
+
+Slicing returns a new tuple and does not modify the original tuple.
+
+Tuple methods
+
+Tuples have only two main methods because they are immutable:
+
+count() counts how many times a value appears.
+
+index() returns the position of the first matching value.
+
+Tuple packing
+
+Tuple packing means combining multiple values into one tuple.
+
+Tuple unpacking
+
+Tuple unpacking means assigning tuple values to separate variables. The number of variables normally needs to match the number of tuple items. A starred variable can collect remaining items.
+
+Nested tuple
+
+A nested tuple contains another tuple. Multiple indexes are used to reach an item inside the inner tuple.
+
+When to use a tuple
+
+Use a tuple for information that should remain fixed, such as coordinates, months, fixed settings, or constant records.
+
+4. Dictionary
+
+A dictionary stores information as key-value pairs. Dictionaries are written using curly brackets. Each key identifies its related value.
+
+Properties of dictionaries
+
+Ordered: Modern Python dictionaries retain insertion order.
+
+Mutable: Key-value pairs can be added, changed, or removed.
+
+Key-based: Values are accessed with keys rather than numerical positions.
+
+Unique keys: A key cannot appear more than once; a later duplicate replaces the earlier value.
+
+Duplicate values allowed: Different keys may contain the same value.
+
+Mixed data types allowed: Values can contain any data type.
+
+Dictionary keys
+
+Keys must be immutable and hashable, such as strings, numbers, or suitable tuples. Lists and dictionaries cannot be used as keys because they are mutable.
+
+Accessing values
+
+Square-bracket access retrieves the value associated with a key but raises an error if the key is missing.
+
+get() retrieves a value safely and can return a chosen default when the key is missing.
+
+Adding and changing information
+
+Assigning a value to a new key adds a key-value pair. Assigning a new value to an existing key updates that pair.
+
+Important dictionary methods
+
+get() safely retrieves a value.
+
+keys() returns all keys.
+
+values() returns all values.
+
+items() returns all key-value pairs.
+
+update() adds new pairs or changes existing pairs.
+
+pop() removes a specified key and returns its value.
+
+popitem() removes and returns the last inserted pair.
+
+clear() removes all pairs.
+
+copy() creates a shallow copy.
+
+setdefault() returns a key's value or adds the key with a default value.
+
+fromkeys() creates a dictionary from a group of keys with one default value.
+
+Checking dictionary membership
+
+The in and not in operators check keys by default. To check values, membership must be checked in the dictionary's values collection.
+
+Nested dictionary
+
+A nested dictionary is a dictionary containing another dictionary. It is useful for structured information such as multiple student, employee, customer, or product records.
+
+List of dictionaries
+
+A list of dictionaries stores several structured records. Each dictionary represents one record, while the list stores the complete group.
+
+Dictionary comprehension
+
+Dictionary comprehension is a short way to construct a dictionary from an iterable.
+
+Basic syntax: {key_expression: value_expression for item in collection}
+
+Difference Between String, List, Tuple, and Dictionary
+
+Feature
+
+String
+
+List
+
+Tuple
+
+Dictionary
+
+Main purpose
+
+Stores text
+
+Stores a collection of items
+
+Stores fixed items
+
+Stores key-value pairs
+
+Common notation
+
+Quotes
+
+Square brackets
+
+Parentheses
+
+Curly brackets
+
+Example structure
+
+Characters
+
+Individual items
+
+Individual items
+
+Keys connected to values
+
+Ordered
+
+Yes
+
+Yes
+
+Yes
+
+Yes, by insertion order
+
+Mutable
+
+No
+
+Yes
+
+No
+
+Yes
+
+Access method
+
+Character index
+
+Item index
+
+Item index
+
+Key
+
+Positive and negative indexing
+
+Yes
+
+Yes
+
+Yes
+
+No numerical indexing by default
+
+Slicing
+
+Yes
+
+Yes
+
+Yes
+
+No direct slicing
+
+Duplicate content
+
+Yes
+
+Yes
+
+Yes
+
+Keys: No; values: Yes
+
+Mixed data types
+
+No; it stores characters
+
+Yes
+
+Yes
+
+Yes
+
+Can grow or shrink directly
+
+No
+
+Yes
+
+No
+
+Yes
+
+Common use
+
+Names, messages, and text
+
+Changeable collections
+
+Fixed records
+
+Descriptive structured records
+
+Simple way to remember
+
+String: Text made of characters.
+
+List: An ordered and changeable collection.
+
+Tuple: An ordered collection that cannot be changed directly.
+
+Dictionary: A changeable collection of labeled key-value pairs.
