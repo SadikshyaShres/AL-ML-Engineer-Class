@@ -524,6 +524,208 @@ Dictionary comprehension is a short way to create a dictionary from another coll
 
 ---
 
+#5. # Sets in Python
+
+## What Is a Set?
+
+A **set** is a Python collection used to store multiple unique values in one variable.
+
+Sets are normally written using curly brackets `{}`.
+
+## Properties of Sets
+
+Python sets are:
+
+- **Unordered:** Items do not have fixed positions.
+- **Unindexed:** Items cannot be accessed using index numbers.
+- **Mutable:** Items can be added or removed.
+- **Unique:** Duplicate values are automatically removed.
+- **Not sliceable:** Sets do not support slicing.
+- **Iterable:** Set items can be processed using a loop.
+
+## Creating an Empty Set
+
+An empty set is created using the `set()` function.
+
+Empty curly brackets `{}` create an empty dictionary, not an empty set.
+
+## Duplicate Values
+
+Sets do not store duplicate values. If the same value is entered multiple times, it is stored only once.
+
+This makes sets useful for removing duplicates from a collection.
+
+## Set Items
+
+A set can contain immutable data types such as:
+
+- Strings
+- Integers
+- Floats
+- Boolean values
+- Tuples
+
+Mutable collections such as lists, sets, and dictionaries cannot be stored directly as set items.
+
+## Accessing Set Items
+
+Sets do not support indexing because they are unordered.
+
+Set items are normally accessed using:
+
+- A loop
+- The `in` operator
+- The `not in` operator
+
+## Checking Set Membership
+
+The `in` operator checks whether a value exists in a set.
+
+The `not in` operator checks whether a value does not exist in a set.
+
+## Important Set Methods
+
+| Method | Purpose |
+|---|---|
+| `add()` | Adds one item |
+| `update()` | Adds multiple items |
+| `remove()` | Removes an item and produces an error if it is missing |
+| `discard()` | Removes an item without producing an error if it is missing |
+| `pop()` | Removes and returns an arbitrary item |
+| `clear()` | Removes all items |
+| `copy()` | Creates a shallow copy |
+
+## Difference Between `add()` and `update()`
+
+| `add()` | `update()` |
+|---|---|
+| Adds one item | Adds multiple items |
+| Accepts one value | Accepts another iterable |
+| Similar to list `append()` | Similar to list `extend()` |
+
+## Difference Between `remove()` and `discard()`
+
+| `remove()` | `discard()` |
+|---|---|
+| Removes a specified value | Removes a specified value |
+| Produces an error if the value is missing | Does not produce an error if the value is missing |
+
+## Set Operations
+
+Set operations are used to compare or combine sets.
+
+### Union
+
+A **union** combines all unique values from two or more sets.
+
+- Method: `union()`
+- Operator: `|`
+
+### Intersection
+
+An **intersection** returns the values found in both sets.
+
+- Method: `intersection()`
+- Operator: `&`
+
+### Difference
+
+A **difference** returns values found in the first set but not in the second set.
+
+- Method: `difference()`
+- Operator: `-`
+
+The direction of the operation matters.
+
+### Symmetric Difference
+
+A **symmetric difference** returns values found in either set but not in both sets.
+
+- Method: `symmetric_difference()`
+- Operator: `^`
+
+## Set Operation Summary
+
+| Operation | Method | Operator | Purpose |
+|---|---|---|---|
+| Union | `union()` | `|` | Combines unique values |
+| Intersection | `intersection()` | `&` | Finds common values |
+| Difference | `difference()` | `-` | Finds values unique to the first set |
+| Symmetric difference | `symmetric_difference()` | `^` | Finds values not shared by both sets |
+
+## Set Relationship Methods
+
+### `issubset()`
+
+Checks whether every item from one set exists in another set.
+
+### `issuperset()`
+
+Checks whether one set contains every item from another set.
+
+### `isdisjoint()`
+
+Checks whether two sets have no common items.
+
+## Set Comprehension
+
+**Set comprehension** is a short method for creating a set from another collection.
+
+### Syntax
+
+`{expression for item in collection}`
+
+A condition can also be included to select particular values.
+
+## Frozen Set
+
+A **frozen set** is an immutable version of a set.
+
+After a frozen set is created:
+
+- Items cannot be added.
+- Items cannot be removed.
+- Items cannot be changed.
+
+## Real-Life Uses of Sets
+
+Sets can be used for:
+
+- Storing unique student IDs
+- Removing duplicate values
+- Finding shared interests
+- Comparing course enrollments
+- Finding common customers
+- Storing unique product categories
+- Checking membership quickly
+
+## Difference Between Set, List, and Tuple
+
+| Feature | Set | List | Tuple |
+|---|---|---|---|
+| Common notation | `{}` | `[]` | `()` |
+| Ordered | No | Yes | Yes |
+| Indexed | No | Yes | Yes |
+| Mutable | Yes | Yes | No |
+| Allows duplicates | No | Yes | Yes |
+| Supports slicing | No | Yes | Yes |
+| Main use | Unique values | Changeable ordered items | Fixed ordered items |
+
+## Quick Summary
+
+- A set stores unique values.
+- Sets are unordered and unindexed.
+- Duplicate values are automatically removed.
+- Sets are mutable.
+- `add()` adds one item.
+- `update()` adds multiple items.
+- `remove()` and `discard()` remove items.
+- Union combines unique values.
+- Intersection finds common values.
+- Difference finds values unique to one set.
+- Symmetric difference finds values that are not shared.
+
+
 
 #Shallow copy and deep copy 
 
