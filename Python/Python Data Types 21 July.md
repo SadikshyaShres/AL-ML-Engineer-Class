@@ -524,6 +524,12 @@ Dictionary comprehension is a short way to create a dictionary from another coll
 
 ---
 
+
+#Shallow copy and deep copy 
+
+- Shallow Copy :A shallow copy creates a new outer object, but the nested objects are still shared with the original.
+- Deep Copy : A deep copy creates a completely independent copy, including all nested objects.
+
 # Difference Between String, List, Tuple, and Dictionary
 
 | Feature | String | List | Tuple | Dictionary |
