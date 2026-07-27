@@ -624,22 +624,17 @@ Plotly Express is more commonly used in modern projects because it is simple and
 | Plotly | Interactive visualizations |
 | Cufflinks | Connecting Pandas with Plotly |
 
-# Suggested Project Order
 
-1. Write the project title.
-2. Explain the project objective.
-3. Load the required libraries.
-4. Load or create the dataset.
-5. Understand the dataset.
-6. Clean missing and duplicate values.
-7. Select and filter relevant data.
-8. Group and summarize information.
-9. Combine datasets when necessary.
-10. Perform exploratory data analysis.
-11. Create visualizations.
-12. Explain the main findings.
-13. Write the conclusion.
+# Exploratory Data Analysis
+EDA means Exploratory Data Analysis. It is the process of understanding a dataset before creating a machine-learning model.
 
-# Conclusion
-
-Pandas is one of the most important Python libraries for data analysis. It helps users organize, clean, select, filter, group, and combine data. NumPy supports numerical calculations, while Matplotlib, Seaborn, Plotly, and Cufflinks help present the analysis visually. Together, these libraries make it easier to understand information and prepare data for machine-learning projects.
+### A simple EDA process includes:
+- Understanding rows and columns
+- Checking data types
+- Finding missing values
+- Finding duplicates
+- Studying numerical statistics
+- Studying category frequencies
+- Finding relationships between variables
+- Identifying unusual values or outliers
+- Creating visualizations
