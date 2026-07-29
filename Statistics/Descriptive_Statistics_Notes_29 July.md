@@ -32,10 +32,10 @@ A. Categorical (Qualitative) vs Numerical (Quantitative)
    - Discrete: Countable, whole-number values only (e.g., number of children, number of cars)
    - Continuous: Can take any value within a range, including decimals (e.g., height, weight, temperature)
    - Interval vs Ratio
-      | Type     | Has True Zero?                          | Example                          |
+| Type     | Has True Zero?                           | Example                           |
 |----------|------------------------------------------|-----------------------------------|
-| Interval | No true zero (zero doesn't mean "absence") | Temperature in °C, Calendar years |
-| Ratio    | Has a true zero (zero means "none")       | Height, weight, income, age       |
+| Interval | No true zero (zero doesn't mean "absence"| Temperature in °C, Calendar years |
+| Ratio    | Has a true zero (zero means "none")      | Height, weight, income, age       |
 
 Summary hierarchy:
      Data
