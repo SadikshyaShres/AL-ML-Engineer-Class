@@ -12,7 +12,7 @@ A company surveys 500 out of its 50,000 customers about satisfaction.
 - Descriptive: "The average satisfaction score among the 500 surveyed customers is 7.8/10."
 - Inferential: "Based on this sample, we estimate the true average satisfaction across all 50,000 customers is between 7.5 and 8.1, with 95% confidence."
 -----------------------------------------------------------------------------------------------------------------------------
-# Introduction to Basic Statistics Terms:
+## Introduction to Basic Statistics Terms:
 1. Population: The entire group you want to study/draw conclusions about (e.g., all customers of a company)
 2. Sample: A subset of the population actually collected/observed
 3. Variable: A characteristic or attribute that can be measured and varies between subjects (e.g., age, income)
@@ -21,9 +21,9 @@ A company surveys 500 out of its 50,000 customers about satisfaction.
 6. Parameter: A numerical summary describing a population (e.g., population mean μ)
 7. Statistic: A numerical summary describing a sample (e.g., sample mean x̄)
 
-Key distinction: Parameter → Population, Statistic → Sample. This is one of the most commonly tested concepts.
+### Key distinction: Parameter → Population, Statistic → Sample. This is one of the most commonly tested concepts.
 -----------------------------------------------------------------------------------------------------------------------------
-# Types of Data 
+## Types of Data 
 A. Categorical (Qualitative) vs Numerical (Quantitative)
 1. Categorical (Qualitative data): Represents categories or labels, not numbers (e.g., gender, blood type, city)
    - Nominal: No inherent order (e.g., colors, religion, gender)
@@ -32,21 +32,8 @@ A. Categorical (Qualitative) vs Numerical (Quantitative)
    - Discrete: Countable, whole-number values only (e.g., number of children, number of cars)
    - Continuous: Can take any value within a range, including decimals (e.g., height, weight, temperature)
    - Interval vs Ratio
-| Type     | Has True Zero?                           | Example                           |
-|----------|------------------------------------------|-----------------------------------|
-| Interval | No true zero (zero doesn't mean "absence"| Temperature in °C, Calendar years |
-| Ratio    | Has a true zero (zero means "none")      | Height, weight, income, age       |
-
-Summary hierarchy:
-     Data
-├── Categorical (Qualitative)
-│   ├── Nominal (no order)
-│   └── Ordinal (ordered)
-└── Numerical (Quantitative)
-    ├── Discrete (countable)
-    └── Continuous (measurable)
-        ├── Interval (no true zero)
-        └── Ratio (true zero)
+     - Interval: No true zero (zero doesn't mean "absence". E.g., Temperature in °C, Calendar years
+     - Ratio: Has a true zero (zero means "none") E.g: Height, weight, income, age 
  ---- -----------------------------------------------------------------------------------------------------------------------
 # Descriptive Statistics 
 Descriptive statistics are simple tools that help us understand and summarize data. They show the basic features of a dataset, like the average, highest and lowest values and how spread out the numbers are. It's the first step in making sense of information.
@@ -56,6 +43,9 @@ Descriptive statistics are simple tools that help us understand and summarize da
 - Measure of Frequency Distribution: How the data is distributed
 ### Measure of Central Tendency 
 Central tendencies in statistics are numerical values that represent the middle or typical value of a dataset. Also known as averages, they provide a summary of the entire data, making it easier to understand the overall pattern or behavior. These values are useful because they capture the essence of large datasets in a single, representative number.
+- Mean : general terms is used for the arithmetic mean of the data, but other than the arithmetic mean there are geometric mean and harmonic mean as well that are calculated using different formulas.
+  : 2+3+5+6= 16/4= 4 The mean is 4
+--
 
 
 
