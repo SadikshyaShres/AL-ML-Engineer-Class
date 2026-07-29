@@ -43,9 +43,17 @@ Descriptive statistics are simple tools that help us understand and summarize da
 - Measure of Frequency Distribution: How the data is distributed
 ### Measure of Central Tendency 
 Central tendencies in statistics are numerical values that represent the middle or typical value of a dataset. Also known as averages, they provide a summary of the entire data, making it easier to understand the overall pattern or behavior. These values are useful because they capture the essence of large datasets in a single, representative number.
-- Mean : general terms is used for the arithmetic mean of the data, but other than the arithmetic mean there are geometric mean and harmonic mean as well that are calculated using different formulas.
-  : 2+3+5+6= 16/4= 4 The mean is 4
---
+#### Mean: 
+- general terms is used for the arithmetic mean of the data, but other than the arithmetic mean there are geometric mean and harmonic mean as well that are calculated using different formulas.
+- 2+3+5+6= 16/4= 4 The mean is 4
+- Mean for ungrouped Data: is defined as the sum of the individual observations divided by the total number of observations N. In other words, the mean is given by the sum of all observations divided by the total number of observations.
+- Mean for grouped data: defined for grouped data as the sum of the product of observations (xi) and their corresponding frequencies (fi) divided by the sum of all the frequencies (fi).
+#### Median
+Median of any distribution is that value that divides the distribution into two equal parts such that the number of observations above it is equal to the number of observations below it. Thus, the median is called the central value of any given data, either grouped or ungrouped.
+- Mean of Ungrouped Data : To calculate the Median, the observations must be arranged in ascending or descending order. If the total number of observations is N, then there are two cases
+Case 1: When N is Odd
+Median = Value of observation at [(n + 1) ÷ 2]th Position
+When N is odd the median is calculated as shown in the image below.
 
 
 
