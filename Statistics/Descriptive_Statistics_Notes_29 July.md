@@ -155,13 +155,18 @@ A continuous distribution contains infinite (variable) data points, which it dis
 - The basic difference of binomial distribution is that probability of success is the same for all trials, while it is not the same case for hypergeometric distribution.
 4. Bernoulli's Trials are experiments in probability where only two possible outcomes are possible: Success or Failure, True or False, Yes or No. Due to the fact of two possible outcomes, it is also called the Binomial Trial.
 5. Uniform Distribution
-A uniform distribution is a type of probability distribution in which every outcome in a given range is equally likely to occur. That means there is no bias; no outcome is more likely than another within the specified set.
+- A uniform distribution is a type of probability distribution in which every outcome in a given range is equally likely to occur. That means there is no bias; no outcome is more likely than another within the specified set.
+- It has two parameters, a and b: a = minimum and b = maximum. The distribution is written as U (a, b).
+6. Normal distribution
+-  It is a continuous probability distribution that is symmetric about its mean. In this distribution, values close to the mean occur more frequently than values farther away from the mean.
+-The area under the curve of a normal distribution is always equal to 1.
+- It is also known as the bell curve or Gaussian distribution.
+- Standard Normal Distribution: Standard Normal Distribution (Z-distribution) is a normal distribution with a mean (μ) of 0 and a standard deviation (σ) of 1. In other words, a standard normal distribution satisfies the following:
+Mean (μ) = 0
+Standard Deviation (σ) = 1
+Total area under the curve = 1
+It is commonly denoted by Z∼N(0,1), where Z represents the standard normal random variable.
 
-It has two parameters, a and b: a = minimum and b = maximum. The distribution is written as U (a, b).
-For example: Rolling a fair six-sided die: Each number (1, 2, 3, 4, 5, or 6) has an equal chance of being rolled, with a probability of 1 6
-1
-​
-  for each outcome.
 
 
   
