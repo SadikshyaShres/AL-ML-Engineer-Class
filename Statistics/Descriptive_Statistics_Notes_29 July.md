@@ -138,6 +138,9 @@ Distributions can be represented in various forms such as probability density fu
 - Continuous Distribution
 ### Discrete Distribution 
 A discrete distribution results from countable data with a finite number of possible values. Furthermore, we can report discrete distributions in tables, and the respective values of the random variable are countable. Ex: rolling dice, choosing several heads, etc.
+### Continuous Distribution 
+A continuous distribution contains infinite (variable) data points, which it displays on a continuous measurement scale. A continuous random variable is a random variable with a set of possible values that is infinite and uncountable
+#### Types of proability distribution
 1. Binomial Distribution
 - The binomial distribution measures the probability of the number of successes or failure outcomes in an experiment on each try.
 - Characteristics are classified into two mutually exclusive and exhaustive classes, such as the number of successes/failures and the number accepted/rejected that follow a binomial distribution.
@@ -150,6 +153,15 @@ A discrete distribution results from countable data with a finite number of poss
 - The hypergeometric distribution is a discrete distribution that measures the probability of a specified number of successes in (n) trials without replacement from a relatively large population (N). In other words, sampling without replacement.
 - The hypergeometric distribution is similar to the binomial distribution;
 - The basic difference of binomial distribution is that probability of success is the same for all trials, while it is not the same case for hypergeometric distribution.
+4. Bernoulli's Trials are experiments in probability where only two possible outcomes are possible: Success or Failure, True or False, Yes or No. Due to the fact of two possible outcomes, it is also called the Binomial Trial.
+5. Uniform Distribution
+A uniform distribution is a type of probability distribution in which every outcome in a given range is equally likely to occur. That means there is no bias; no outcome is more likely than another within the specified set.
+
+It has two parameters, a and b: a = minimum and b = maximum. The distribution is written as U (a, b).
+For example: Rolling a fair six-sided die: Each number (1, 2, 3, 4, 5, or 6) has an equal chance of being rolled, with a probability of 1 6
+1
+​
+  for each outcome.
 
 
   
