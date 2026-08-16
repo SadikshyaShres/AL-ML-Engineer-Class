@@ -222,6 +222,7 @@ For example:
 Dimensionality Reduction
      ↓
 2 or 3 Features
+
 ```
 
 It is useful for:
